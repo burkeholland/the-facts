@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}") = "the-facts-app", "the-facts-app\the-facts-app.iceproj", "{68E3829B-BA7C-48AC-941A-76A7CF5D64CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "the-facts-api", "the-facts-api\the-facts-api.csproj", "{A29DD5BA-A037-4F7B-B494-CD74DBC9EACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68E3829B-BA7C-48AC-941A-76A7CF5D64CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E3829B-BA7C-48AC-941A-76A7CF5D64CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E3829B-BA7C-48AC-941A-76A7CF5D64CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E3829B-BA7C-48AC-941A-76A7CF5D64CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29DD5BA-A037-4F7B-B494-CD74DBC9EACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29DD5BA-A037-4F7B-B494-CD74DBC9EACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29DD5BA-A037-4F7B-B494-CD74DBC9EACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29DD5BA-A037-4F7B-B494-CD74DBC9EACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

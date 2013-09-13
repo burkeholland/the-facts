@@ -1,0 +1,69 @@
+#shareDrawer .km-content {
+    background-color: black;
+    color: white;
+}
+
+#shareDrawer .icon-big {
+    font-size: 3em;    
+}
+
+#shareDrawer .icon-twitter {
+    color: #00acee;
+}
+
+#shareDrawer .icon-facebook-sign {
+    color: #3b5998;
+}
+
+#shareDrawer .icon-google-plus {
+    color: #dd4c39 ;
+}
+
+#shareDrawer .km-button {
+    width: 100%;
+}
+
+#shareDrawer .title {
+    color: gray;
+}
+
+#shareDrawer .icon {
+    margin-right: 10px;
+}
+
+.joke {
+    margin: 10px;
+}
+
+/* Custom Icons */
+
+.fontawesome .km-icon:after,
+.fontawesome .km-icon:before
+{
+    font: 1em/1em "FontAwesome";
+}
+
+.km-gamepad:after,
+.km-gamepad:before
+{
+    content: "\F11B";
+}
+
+.km-exclamation:after,
+.km-exclamation:before
+{
+    content: "\F12A";
+    padding-left: 7px;
+} 
+
+.km-dashboard:after,
+.km-dashboard:before
+{
+    content: "\F0E4";
+}
+
+/* End custom icons */
+
+.color-red {
+    color: red;
+}

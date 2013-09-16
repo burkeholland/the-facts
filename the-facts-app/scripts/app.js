@@ -1,18 +1,18 @@
 (function (global) {
     var application,
-        api = "http://localhost:52787/";
+        api = "http://chuckfacts.azurewebsites.net/"; /* "http://localhost:52787/"; */
 
     global.app = {};
 
-    var randomJoke = function (explicit) {
+    var randomJoke = function(explicit) {
         var dfrd = $.Deferred();
 
-        $.get(api + "joke/" + (explicit ? "explicit" : "clean"), function (data) {
+        $.get(api + "joke/" + (explicit ? "explicit" : "clean"), function(data) {
             dfrd.resolve(data.JokeText);
         });
 
         return dfrd;
-    }
+    };
 
     global.app.cleanModel = (function () {
 
@@ -29,13 +29,13 @@
         return {
             viewModel: viewModel,
             refresh: refresh
-        }
+        };
 
     }());
 
     global.app.dashboardModel = (function () {
 
-        var init = function () {
+        var init = function() {
             $("#categoriesPie").kendoChart({
                 theme: "flat",
                 dataSource: {
@@ -61,29 +61,18 @@
                     field: "Jokes",
                     categoryField: "Description",
                     startAngle: 150,
-
                 }]
             });
-        }
+        };
 
         return {
             init: init
-        }
+        };
 
     }());
-
-
-    global.app.jokesVIew = kendo.observable({
-        jokes: new kendo.data.DataSource({
-            transport: {
-                read: "api" + "jokes"
-            }
-        })
-    });
 
     document.addEventListener("deviceready", function () {
         application = new kendo.mobile.Application(document.body, { transition: "slide", skin: "flat" });
     }, false);
-
 
 })(window);

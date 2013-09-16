@@ -181,7 +181,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\chuckfacts - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\chuckfacts - Web Deploy.pubxml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
